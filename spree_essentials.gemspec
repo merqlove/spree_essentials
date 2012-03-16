@@ -15,13 +15,13 @@ Gem::Specification.new do |s|
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
-  
+
   s.require_paths = ["lib"]
 
   # Spree
-  s.add_runtime_dependency('spree_core',  '~> 1.0.0')
+  s.add_runtime_dependency('spree_core',  '~> 1.1.0.beta')
   s.add_runtime_dependency('rdiscount',   '~> 1.6.8')
-  
+
   # Development
 	s.add_development_dependency('shoulda',      '~> 3.0.0')
 	s.add_development_dependency('dummier',      '~> 0.3.0')
@@ -30,5 +30,5 @@ Gem::Specification.new do |s|
 	s.add_development_dependency('sqlite3',      '~> 1.3.4')
 
 	# s.add_development_dependency('simplecov',    '~> 0.6.1')
-	
+
 end
