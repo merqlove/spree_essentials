@@ -9,15 +9,6 @@ module Spree::Admin::SpreeEssentialsHelper
       link_to I18n.t('spree.admin.shared.contents_tab.content'), extension_routes.first
     end
   end
-  
-  def markdown_helper
-    content_tag('em', :class => 'small markdown-helper') do
-      [ 
-        t('essentials.parsed_with'),
-        link_to("Markdown", "http://daringfireball.net/projects/markdown/basics", :onclick => 'window.open(this.href); return false')
-      ].join(" ").html_safe
-    end
-  end
 
 private
   

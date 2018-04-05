@@ -6,7 +6,7 @@ module SpreeEssentials
     config.autoload_paths += %W(#{config.root}/lib)
     
     initializer :assets do |config| 
-      Rails.application.config.assets.precompile += %w( admin/markitup.css admin/date.js admin/jquery.autodate.js admin/jquery.markitup.js admin/markdown.set.js )
+      Rails.application.config.assets.precompile += %w( admin/date.js admin/jquery.autodate.js )
     end
     
     config.to_prepare do
