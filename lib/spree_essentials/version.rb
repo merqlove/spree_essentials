@@ -1,3 +1,3 @@
 module SpreeEssentials
-  VERSION = "1.3.0.rc1"
+  VERSION = '3.0.0.rc1'.freeze
 end

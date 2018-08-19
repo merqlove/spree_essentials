@@ -2,9 +2,15 @@
 Change Log
 ------------------------------------------------------------------------------
 
+**3.0.0.rc1 - 2018/8/18**
+
+* Depend on Spree 3.x
+* Fix paperclip support.
+* Upgrade to Rails 5 / Spree 3.x.
+
 **0.50.0 - 2012/5/1**
 
-* Depend on Spree 1.1.0 
+* Depend on Spree 1.1.0
 * Remove `add_attachment_file_size_to_assets` migration
 
 
