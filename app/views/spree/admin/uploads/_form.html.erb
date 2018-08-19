@@ -1,14 +1,14 @@
 <div class="row" id="general_fields">
   <div class="col-md-3">
     <%= f.field_container :attachment, class: ['form-group'] do %>
-      <%= form.label :attachment %>:<br/>
-      <%= form.file_field :attachment, class: 'form-control' %>
+      <%= f.label :attachment %>:<br/>
+      <%= f.file_field :attachment, class: 'form-control' %>
     <% end %>
   </div>
   <div class="col-md-3">
     <%= f.field_container :alt, class: ['form-group'] do %>
-      <%= form.label :alt, t('description') %>:<br/>
-      <%= form.text_field :alt, :class => 'text form-control' %>
+      <%= f.label :alt, t('description') %>:<br/>
+      <%= f.text_field :alt, :class => 'text form-control' %>
     <% end %>
   </div>
 </div>
