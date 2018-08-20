@@ -16,4 +16,8 @@ class Spree::Admin::UploadsController < Spree::Admin::ResourceController
   def permitted_resource_params
     params[resource.object_name].present? ? params.require(resource.object_name).permit(:attachment, :alt) : ActionController::Parameters.new
   end
+
+  def model_class
+    Spree::Upload
+  end
 end
