@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
 class Spree::Upload < ::Spree::Asset
-  validate :no_attachement_errors
-
   has_attached_file :attachment,
-                    styles: proc { |clip| clip.instance.attachment_sizes },
+                    styles: lambda { |clip| clip.instance.attachment_sizes },
                     default_style: :medium,
                     url: '/spree/uploads/:id/:style/:basename.:extension',
                     path: ':rails_root/public/spree/uploads/:id/:style/:basename.:extension'
+
+  validate :no_attachement_errors
 
   def image_content?
     attachment_content_type.match(%r{\/(jpeg|png|gif|tiff|x-photoshop)})
