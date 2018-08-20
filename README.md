@@ -26,6 +26,9 @@ If you don't already have an existing Spree site, [click here](https://gist.gith
 Spree Essentials can be installed by itself by adding the following to your Gemfile:
     
 ```ruby
+# Spree 3.x
+gem 'spree_essentials', git: 'git://github.com/merqlove/spree_essentials', branch: '3.x'
+
 # Spree 1.1.x
 gem 'spree_essentials', '~> 0.5.0'
 
@@ -215,6 +218,12 @@ To Do
 Change Log
 ------------------------------------------------------------------------------
 
+**3.0.0.rc1 - 2018/8/18**
+
+* Depend on Spree 3.x
+* Fix paperclip support.
+* Upgrade to Rails 5 / Spree 3.x.
+
 **0.50.0 - 2012/5/1**
 
 * Depend on Spree 1.1.0 
@@ -277,6 +286,7 @@ Change Log
 Contributors
 ------------------------------------------------------------------------------
 
+* Alexander Merkulov ([@merqlove](https://github.com/merqlove))
 * Spencer Steffen ([@citrus](https://github.com/citrus))
 * Michael Bianco ([@iloveitaly](https://github.com/iloveitaly))
 * Victor Zagorski ([@shaggyone](https://github.com/shaggyone))
