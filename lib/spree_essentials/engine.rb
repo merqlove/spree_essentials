@@ -6,7 +6,7 @@ module SpreeEssentials
     config.autoload_paths += %W[#{config.root}/lib]
 
     initializer :assets do |_config|
-      Rails.application.config.assets.precompile += %w[ admin/date.js admin/jquery.autodate.js ]
+      Rails.application.config.assets.precompile += %w[ spree/backend/date.js spree/backend/jquery.autodate.js ]
     end
 
     config.to_prepare do
