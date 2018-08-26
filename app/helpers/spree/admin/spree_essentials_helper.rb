@@ -6,8 +6,8 @@ module Spree
       end
 
       def contents_tab
-        content_tag :li, :class => inside_contents_tab? ? 'selected' : nil do
-          link_to I18n.t('spree.admin.shared.contents_tab.content'), extension_routes.first
+        content_tag :ul, :class => 'nav nav-sidebar' do
+          main_menu_tree Spree.t('admin.shared.contents_tab.content'), icon: "pencil", sub_menu: "content", url: extension_routes.first
         end
       end
 
