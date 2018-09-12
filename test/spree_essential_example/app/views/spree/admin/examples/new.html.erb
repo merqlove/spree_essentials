@@ -4,7 +4,7 @@
 
 <h1>New Example</h1>
 
-<%= form_for([:admin, @example], :html => { :multipart => true }) do |f| %>
+<%= form_for([:admin, @example], :html_wrap => { :multipart => true }) do |f| %>
   <%= render "form", :form => f %>
 
   <p class="form-buttons">

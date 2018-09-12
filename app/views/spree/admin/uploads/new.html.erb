@@ -4,7 +4,7 @@
 
 <%= render :partial => 'spree/admin/shared/error_messages', :locals => { :target => @upload } %>
 
-<%= form_for([:admin, @upload], :html => { :multipart => true }) do |f| %>
+<%= form_for([:admin, @upload], :html_wrap => { :multipart => true }) do |f| %>
   <fieldset>
   <%= render :partial => 'form', :locals => { :f => f } %>
   <%= render :partial => 'spree/admin/shared/new_resource_links' %>
