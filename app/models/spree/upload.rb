@@ -7,7 +7,9 @@ class Spree::Upload < ::Spree::Asset
                     url: '/spree/uploads/:id/:style/:basename.:extension',
                     path: ':rails_root/public/spree/uploads/:id/:style/:basename.:extension'
 
-  validate :no_attachement_errors
+  validates_attachment :attachment,
+                       :presence => true,
+                       :content_type => { :content_type => %w(image/jpeg image/jpg image/png image/gif) }
 
   def image_content?
     attachment_content_type.match(%r{\/(jpeg|png|gif|tiff|x-photoshop)})
